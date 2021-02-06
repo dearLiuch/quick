@@ -1,0 +1,15 @@
+初始化springboot项目:（在github上新建repository，取名为quick，且获取下载git链接https://github.com/dearLiuch/quick.git）
+1.在本地项目E:\IdeaProject\quick执行git命令：
+git init   //初始化git仓库
+git branch -M master //新建master分支
+git remote add origin https://github.com/dearLiuch/quick.git //关联远程仓库后，查询sourceTree配置，已经自动更新同步配置好）
+执行提交操作即可；
+
+删除无用的mvnw、mvnw.cmd、HELP.md、.mvn、src目录，只留下.gitignore、pom.xml、quick.iml文件；
+新增子模块：quick-web、quick-biz、quick-dao、quick-common
+根目录quick右击-》new Module-》maven选项-》next即可-》artifact：quick-biz-》moduleName:quick-biz即可；
+其他模块同理操作即可；
+
+新建子模块后，确认java目录是source目录，这样在该目录下新建的package如com.lch.dao会是三级目录，而不是一级目录。
+
+
